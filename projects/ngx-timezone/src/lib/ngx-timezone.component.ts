@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-timezone',
+  selector: 'ngx-timezone',
   template: `
     <p>
       ngx-timezone works!
