@@ -7,14 +7,10 @@ import { Component, OnInit } from '@angular/core';
       ngx-timezone works!
     </p>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class NgxTimezoneComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

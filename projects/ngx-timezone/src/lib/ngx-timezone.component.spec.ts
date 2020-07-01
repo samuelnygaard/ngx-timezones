@@ -8,9 +8,8 @@ describe('NgxTimezoneComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxTimezoneComponent ]
-    })
-    .compileComponents();
+      declarations: [NgxTimezoneComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
