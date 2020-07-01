@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Angular Deploy gh-pages Actions
+    - name: Angular Deploy gh-pages
       uses: samuelnygaard/angular-deploy-gh-pages-actions@master
       with:
         github_access_token: ${{ secrets.ACCESS_TOKEN }} # see the Configuration section for how you can create secrets
