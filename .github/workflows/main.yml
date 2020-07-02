@@ -7,12 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Angular Deploy gh-pages
-      uses: samuelnygaard/angular-deploy-gh-pages-actions@master
-      with:
-        github_access_token: ${{ secrets.ACCESS_TOKEN }} # see the Configuration section for how you can create secrets
-        build_configuration: production # The build environment for the app. please look configurations in your angular.json
-        base_href: '' # empty string to support optional base-href
-        deploy_branch: gh-pages # The branch the action should deploy to.
-        build_folder: dist/demo # The folder where your project is supposed to be after running ng build by the action.
+      - uses: actions/checkout@v2
+      - name: Angular Deploy gh-pages
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@1.2.1
+        with:
+          github_access_token: ${{ secrets.ACCESS_TOKEN }} # see the Configuration section for how you can create secrets
+          build_configuration: production # The build environment for the app. please look configurations in your angular.json
+          base_href: "" # empty string to support optional base-href
+          deploy_branch: gh-pages # The branch the action should deploy to.
+          build_folder: dist/demo # The folder where your project is supposed to be after running ng build by the action.
