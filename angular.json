@@ -7,11 +7,12 @@
       "projectType": "library",
       "root": "projects/ngx-timezone",
       "sourceRoot": "projects/ngx-timezone/src",
-      "prefix": "",
+      "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
+            "allowedCommonJsDependencies": ["moment-timezone"],
             "tsConfig": "projects/ngx-timezone/tsconfig.lib.json",
             "project": "projects/ngx-timezone/ng-package.json"
           },
@@ -36,9 +37,7 @@
               "projects/ngx-timezone/tsconfig.lib.json",
               "projects/ngx-timezone/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -144,9 +143,7 @@
               "projects/demo/tsconfig.spec.json",
               "projects/demo/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {

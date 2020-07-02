@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 // Angular material
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 html,
 body {
   height: 100%;
@@ -116,6 +117,12 @@ a {
       margin-left: 0;
     }
   }
+}
+
+.btn.btn-inverted {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header {
