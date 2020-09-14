@@ -2,19 +2,19 @@
   "name": "ngx-timezones",
   "version": "1.0.0",
   "description": "An Angular module for timezones (based on moment.js)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/samuelnygaard/ngx-timezones"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/samuelnygaard/ngx-timezones/issues"
-  },
+  "homepage": "https://samuelnygaard.github.io/ngx-timezones/",
   "author": {
     "name": "Samuel Nygaard",
     "email": "teamnygaard@gmail.com"
   },
-  "homepage": "https://samuelnygaard.github.io/ngx-timezones/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuelnygaard/ngx-timezones"
+  },
+  "bugs": {
+    "url": "https://github.com/samuelnygaard/ngx-timezones/issues"
+  },
   "keywords": [
     "angular",
     "angular 4",
@@ -38,8 +38,5 @@
     "@angular/material": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
     "ngx-mat-select-search": "^3.0.0",
     "moment-timezone": "^0.5.31"
-  },
-  "dependencies": {
-    "tslib": "^2.0.0"
   }
 }
