@@ -52,7 +52,7 @@ interface TimezoneGroup {
     </mat-select>
   </mat-form-field>`,
 })
-export class NgxTimezoneComponent implements OnInit {
+export class NgxTimezonesComponent implements OnInit {
   timezoneCtrl = new FormControl();
   timezoneGroups!: TimezoneGroup[];
   timezoneGroupsOptions!: Observable<TimezoneGroup[]>;

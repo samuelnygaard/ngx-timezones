@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxTimezoneComponent } from './ngx-timezones.component';
+import { NgxTimezonesComponent } from './ngx-timezones.component';
 
 describe('NgxTimezoneComponent', () => {
-  let component: NgxTimezoneComponent;
-  let fixture: ComponentFixture<NgxTimezoneComponent>;
+  let component: NgxTimezonesComponent;
+  let fixture: ComponentFixture<NgxTimezonesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NgxTimezoneComponent],
+      declarations: [NgxTimezonesComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxTimezoneComponent);
+    fixture = TestBed.createComponent(NgxTimezonesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

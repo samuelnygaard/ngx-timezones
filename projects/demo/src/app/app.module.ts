@@ -1,4 +1,4 @@
-import { NgxTimezoneModule } from './../../../ngx-timezones/src/lib/ngx-timezones.module';
+import { NgxTimezonesModule } from './../../../ngx-timezones/src/lib/ngx-timezones.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NgxTimezoneModule, BrowserAnimationsModule],
+  imports: [BrowserModule, NgxTimezonesModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
