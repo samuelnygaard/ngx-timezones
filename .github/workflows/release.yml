@@ -28,8 +28,6 @@ jobs:
         run: |
           npm i
           npm run build:prod
-      - name: npm test
-        run: npm run test
       - name: Publish
         uses: mikeal/merge-release@v4.3.0
         env:
