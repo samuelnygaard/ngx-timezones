@@ -1,7 +1,7 @@
 {
   "name": "ngx-timezones",
   "version": "1.0.0",
-  "description": "",
+  "description": "An Angular module for timezones (based on moment.js)",
   "repository": {
     "type": "git",
     "url": "https://github.com/samuelnygaard/ngx-timezones"

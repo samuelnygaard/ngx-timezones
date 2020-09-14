@@ -1,13 +1,30 @@
 <section class="page-header">
   <h1 class="project-name">ngx-timezones</h1>
   <h2 class="project-tagline">
-    An angular module for timezones (based on moment.js)
+    An Angular module for timezones (based on moment.js)
   </h2>
-  <a href="https://github.com/samuelnygaard/ngx-timezones" class="btn"
+  <a
+    href="https://github.com/samuelnygaard/ngx-timezones"
+    class="btn"
+    target="_blank"
     >View on GitHub</a
   >
-  <a href="#" class="btn">Download .zip</a>
-  <a href="#" class="btn">Download .tar.gz</a>
+  <a
+    href="https://www.npmjs.com/package/ngx-timezones"
+    class="btn"
+    target="_blank"
+    >View on NPM</a
+  >
+  <a
+    href="https://api.github.com/repos/samuelnygaard/ngx-timezones/tarball/"
+    class="btn"
+    >Download .zip</a
+  >
+  <a
+    href="https://api.github.com/repos/samuelnygaard/ngx-timezones/zipball/"
+    class="btn"
+    >Download .tar.gz</a
+  >
 </section>
 
 <section class="main-content">
@@ -16,6 +33,7 @@
       ><span class="octicon octicon-link"></span></a
     >Basic demo
   </h1>
+  <p>Demo text</p>
 
   <ngx-timezones [(timezone)]="timezone"></ngx-timezones>
 
@@ -24,6 +42,14 @@
   app.component.html
   <pre><code>{{code}}</code></pre>
 
+  <button
+    class="btn btn-inverted"
+    *ngIf="timezone"
+    (click)="timezone = undefined"
+  >
+    Reset timezone
+  </button>
+
   <h1>
     <a id="header-demo" class="anchor" href="#guess-demo" aria-hidden="true"
       ><span class="octicon octicon-link"></span></a
@@ -31,13 +57,7 @@
   </h1>
   <p>Demo text</p>
 
-  <ngx-timezones
-    #ngxTimezone
-    [guess]="true"
-    [showOffset]="showOffset"
-    [offsetName]="offsetName"
-    [(timezone)]="guessedTimezone"
-  >
+  <ngx-timezones #ngxTimezone [guess]="true" [(timezone)]="guessedTimezone">
   </ngx-timezones>
 
   app.component.ts
@@ -58,6 +78,38 @@
   >
     Guess timezone
   </button>
+  <button class="btn btn-inverted" (click)="showOffset = !showOffset">
+    {{ showOffset ? 'Hide' : 'Show' }} offset
+  </button>
+  <button
+    class="btn btn-inverted"
+    (click)="tmp = offsetName; offsetName = altName; altName = tmp"
+  >
+    Use {{ altName }}
+  </button>
+
+  <h1>
+    <a id="header-demo" class="anchor" href="#offset-demo" aria-hidden="true"
+      ><span class="octicon octicon-link"></span></a
+    >Offset demo
+  </h1>
+  <p>Demo text</p>
+
+  <ngx-timezones
+    #ngxTimezone
+    [guess]="true"
+    [showOffset]="showOffset"
+    [offsetName]="offsetName"
+    [(timezone)]="offsetTimezone"
+  >
+  </ngx-timezones>
+
+  app.component.ts
+  <pre><code>offsetTimezone = {{offsetTimezone ? "'" + offsetTimezone + "'" : 'undefined'}};
+showOffset = {{showOffset ? 'true' : 'false'}};</code></pre>
+  app.component.html
+  <pre><code> {{code3}}</code></pre>
+
   <button class="btn btn-inverted" (click)="showOffset = !showOffset">
     {{ showOffset ? 'Hide' : 'Show' }} offset
   </button>
