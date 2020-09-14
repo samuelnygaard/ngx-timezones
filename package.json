@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build ngx-timezones --prod",
+    "build:prod": "cp README.md projects/ngx-timezones/README.md && ng build ngx-timezones --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
