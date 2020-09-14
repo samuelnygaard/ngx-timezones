@@ -1,4 +1,4 @@
-import { NgxTimezoneModule } from './../../../ngx-timezone/src/lib/ngx-timezone.module';
+import { NgxTimezoneModule } from './../../../ngx-timezones/src/lib/ngx-timezones.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

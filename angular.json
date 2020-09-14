@@ -3,39 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-timezone": {
+    "ngx-timezones": {
       "projectType": "library",
-      "root": "projects/ngx-timezone",
-      "sourceRoot": "projects/ngx-timezone/src",
+      "root": "projects/ngx-timezones",
+      "sourceRoot": "projects/ngx-timezones/src",
       "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "allowedCommonJsDependencies": ["moment-timezone"],
-            "tsConfig": "projects/ngx-timezone/tsconfig.lib.json",
-            "project": "projects/ngx-timezone/ng-package.json"
+            "tsConfig": "projects/ngx-timezones/tsconfig.lib.json",
+            "project": "projects/ngx-timezones/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-timezone/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-timezones/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-timezone/src/test.ts",
-            "tsConfig": "projects/ngx-timezone/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-timezone/karma.conf.js"
+            "main": "projects/ngx-timezones/src/test.ts",
+            "tsConfig": "projects/ngx-timezones/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-timezones/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-timezone/tsconfig.lib.json",
-              "projects/ngx-timezone/tsconfig.spec.json"
+              "projects/ngx-timezones/tsconfig.lib.json",
+              "projects/ngx-timezones/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -76,7 +75,7 @@
                   "with": "projects/demo/src/environments/environment.prod.ts"
                 }
               ],
-              "baseHref": "/ngx-timezone/",
+              "baseHref": "/ngx-timezones/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,

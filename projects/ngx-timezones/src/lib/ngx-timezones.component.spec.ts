@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxTimezoneComponent } from './ngx-timezone.component';
+import { NgxTimezoneComponent } from './ngx-timezones.component';
 
 describe('NgxTimezoneComponent', () => {
   let component: NgxTimezoneComponent;

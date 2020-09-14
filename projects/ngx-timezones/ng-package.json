@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ngx-timezone",
+  "dest": "../../dist/ngx-timezones",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

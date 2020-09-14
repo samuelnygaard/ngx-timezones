@@ -1,9 +1,9 @@
 <section class="page-header">
-  <h1 class="project-name">ngx-timezone</h1>
+  <h1 class="project-name">ngx-timezones</h1>
   <h2 class="project-tagline">
     An angular module for timezones (based on moment.js)
   </h2>
-  <a href="https://github.com/samuelnygaard/ngx-timezone" class="btn"
+  <a href="https://github.com/samuelnygaard/ngx-timezones" class="btn"
     >View on GitHub</a
   >
   <a href="#" class="btn">Download .zip</a>
@@ -17,7 +17,7 @@
     >Basic demo
   </h1>
 
-  <ngx-timezone [(timezone)]="timezone"></ngx-timezone>
+  <ngx-timezones [(timezone)]="timezone"></ngx-timezones>
 
   app.component.ts
   <pre><code>timezone = {{timezone ? "'" + timezone + "'" : 'undefined'}};</code></pre>
@@ -31,14 +31,14 @@
   </h1>
   <p>Demo text</p>
 
-  <ngx-timezone
+  <ngx-timezones
     #ngxTimezone
     [guess]="true"
     [showOffset]="showOffset"
     [offsetName]="offsetName"
     [(timezone)]="guessedTimezone"
   >
-  </ngx-timezone>
+  </ngx-timezones>
 
   app.component.ts
   <pre><code>guessedTimezone = {{guessedTimezone ? "'" + guessedTimezone + "'" : 'undefined'}};</code></pre>

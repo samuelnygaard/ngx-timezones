@@ -8,10 +8,10 @@
   "files": [],
   "references": [
     {
-      "path": "./projects/ngx-timezone/tsconfig.lib.json"
+      "path": "./projects/ngx-timezones/tsconfig.lib.json"
     },
     {
-      "path": "./projects/ngx-timezone/tsconfig.spec.json"
+      "path": "./projects/ngx-timezones/tsconfig.spec.json"
     },
     {
       "path": "./projects/demo/tsconfig.app.json"
@@ -22,5 +22,5 @@
     {
       "path": "./projects/demo/e2e/tsconfig.json"
     }
-]
+  ]
 }

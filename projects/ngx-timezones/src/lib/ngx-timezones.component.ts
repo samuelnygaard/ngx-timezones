@@ -1,4 +1,4 @@
-import { countryZones } from './ngx-timezone.data';
+import { countryZones } from './ngx-timezones.data';
 import {
   Component,
   OnInit,
@@ -20,7 +20,7 @@ interface TimezoneGroup {
 }
 
 @Component({
-  selector: 'ngx-timezone',
+  selector: 'ngx-timezones',
   template: ` <mat-form-field style="width: 100%"
     ><mat-select [formControl]="timezoneCtrl" [placeholder]="placeholder">
       <mat-option>

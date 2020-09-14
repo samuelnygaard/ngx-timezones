@@ -1,0 +1,45 @@
+{
+  "name": "ngx-timezones",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuelnygaard/ngx-timezones"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelnygaard/ngx-timezones/issues"
+  },
+  "author": {
+    "name": "Samuel Nygaard",
+    "email": "teamnygaard@gmail.com"
+  },
+  "homepage": "https://samuelnygaard.github.io/ngx-timezones/",
+  "keywords": [
+    "angular",
+    "angular 4",
+    "angular 5",
+    "ng2",
+    "timezone",
+    "timezones",
+    "selector",
+    "picker",
+    "moment",
+    "moment-js",
+    "moment-timezone",
+    "timezone selector"
+  ],
+  "peerDependencies": {
+    "@angular/animations": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/cdk": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/common": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/core": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/forms": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/material": "^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "ngx-mat-select-search": "^3.0.0",
+    "moment-timezone": "^0.5.31"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

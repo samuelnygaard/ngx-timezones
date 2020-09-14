@@ -13,7 +13,7 @@ export class AppComponent {
   guessedTimezone: string;
 
   get code(): string {
-    return `<ngx-timezone [(timezone)]="timezone"></ngx-timezone>`;
+    return `<ngx-timezones [(timezone)]="timezone"></ngx-timezones>`;
   }
 
   get code1(): string {
@@ -21,11 +21,11 @@ export class AppComponent {
   }
 
   get code2(): string {
-    return `<ngx-timezone
+    return `<ngx-timezones
     [guess]="true"
     [showOffset]="${this.showOffset}"
     offsetName="${this.offsetName}"
     [(timezone)]="guessedTimezone">
- </ngx-timezone>`;
+ </ngx-timezones>`;
   }
 }
