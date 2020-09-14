@@ -24,12 +24,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm test
-        run: npm run test
       - name: npm install and npm run build
         run: |
           npm i
           npm run build:prod
+      - name: npm test
+        run: npm run test
       - name: Publish
         uses: mikeal/merge-release@v4.3.0
         env:
