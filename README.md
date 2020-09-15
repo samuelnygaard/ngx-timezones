@@ -5,7 +5,7 @@ An Angular module for timezones (based on moment.js)
 ## Demonstration
 
 Go to this website to try out the library:
-[https://samuelnygaard.github.io/ng2-timezone-selector/](https://samuelnygaard.github.io/ng2-timezone-selector/)
+[https://samuelnygaard.github.io/ngx-timezones/](https://samuelnygaard.github.io/ngx-timezones/)
 
 ## Installation
 
