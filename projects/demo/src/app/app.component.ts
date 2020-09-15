@@ -12,27 +12,47 @@ export class AppComponent {
   timezone: string;
   guessedTimezone: string;
   offsetTimezone: string;
+  disabled = false;
+
+  get importCode(): string {
+    return `import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// Import the module
+import { NgxTimezonesModule } from 'ngx-timezones';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    // Include the module in the import section
+    NgxTimezonesModule,
+    BrowserAnimationsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}`;
+  }
 
   get code(): string {
-    return `<ngx-timezones [(timezone)]="timezone"></ngx-timezones>`;
+    return `<ngx-timezones [(timezone)]="timezone" [disabled]="disabled"></ngx-timezones>`;
   }
 
   get code1(): string {
-    return '<button (click)="ngxTimezone.guessedTimezone()">Guess timezone</button>';
-  }
-
-  get code2(): string {
     return `<ngx-timezones
     [guess]="true"
     [(timezone)]="guessedTimezone">
  </ngx-timezones>`;
   }
 
-  get code3(): string {
+  get code2(): string {
     return `<ngx-timezones
     [guess]="true"
-    [showOffset]="${this.showOffset}"
-    offsetName="${this.offsetName}"
+    [showOffset]="showOffset"
+    [offsetName]="offsetName"
     [(timezone)]="offsetTimezone">
  </ngx-timezones>`;
   }

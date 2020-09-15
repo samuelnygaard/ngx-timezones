@@ -1,27 +1,47 @@
-# NgxTimezones
+# ngx-timezones
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+An Angular module for timezones (based on moment.js)
 
-## Development server
+## Demonstration
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Go to this website to try out the library:
+[https://samuelnygaard.github.io/ng2-timezone-selector/](https://samuelnygaard.github.io/ng2-timezone-selector/)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install the library in your Angular projects root folder:
 
-## Build
+```bash
+npm i ngx-timezones
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Importing
 
-## Running unit tests
+Import the `NgxTimezonesModule` in the your `app.module.ts`:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-## Running end-to-end tests
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// Import the module
+import { NgxTimezonesModule } from 'ngx-timezones';
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    // Include the module in the import section
+    NgxTimezonesModule,
+    BrowserAnimationsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
 
-## Further help
+## Documentation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+TODO

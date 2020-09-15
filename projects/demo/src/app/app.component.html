@@ -28,18 +28,66 @@
 </section>
 
 <section class="main-content">
+  <p>
+    Selection timezones can be a hurdle when you want to support all timezones
+    for each country in the world. This Angular library utilizes
+    <a
+      href="https://github.com/bithost-gmbh/ngx-mat-select-search"
+      target="_blank"
+      ><code>ngx-mat-select-search</code></a
+    >
+    to make an advanced timezone selector.
+  </p>
+  <h3>Content:</h3>
+  <ul>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#demonstration">Demonstration</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+  </ul>
   <h1>
-    <a id="header-demo" class="anchor" href="#demo" aria-hidden="true"
+    <a id="installation" class="anchor" href="#installation" aria-hidden="true"
       ><span class="octicon octicon-link"></span></a
-    >Basic demo
+    >Installation
   </h1>
-  <p>Demo text</p>
+  <hr />
+  <p>Install the library in your Angular projects root folder:</p>
+  <pre><code>npm i ngx-timezones</code></pre>
+  <h2>
+    <a
+      id="importing-header-2"
+      class="anchor"
+      href="#importing"
+      aria-hidden="true"
+      ><span class="octicon octicon-link"></span></a
+    >Importing
+  </h2>
+  <p>
+    Import the <code>NgxTimezonesModule</code> in the your
+    <code>app.module.ts</code>:
+  </p>
+  <pre><code>{{importCode}}</code></pre>
 
-  <ngx-timezones [(timezone)]="timezone"></ngx-timezones>
+  <h1>
+    <a
+      id="demonstration"
+      class="anchor"
+      href="#demonstration"
+      aria-hidden="true"
+      ><span class="octicon octicon-link"></span></a
+    >Demonstration
+  </h1>
+  <hr />
+  <p>
+    This demo shows the usage of <code>ngx-timezones</code> with default
+    Documentation:
+  </p>
 
-  app.component.ts
-  <pre><code>timezone = {{timezone ? "'" + timezone + "'" : 'undefined'}};</code></pre>
-  app.component.html
+  <ngx-timezones [(timezone)]="timezone" [disabled]="disabled"></ngx-timezones>
+
+  <code>app.component.ts</code>
+  <pre><code>timezone = {{timezone ? "'" + timezone + "'" : 'undefined'}};
+disabled = {{disabled}};</code></pre>
+  <code>app.component.html</code>
   <pre><code>{{code}}</code></pre>
 
   <button
@@ -49,21 +97,28 @@
   >
     Reset timezone
   </button>
+  <button class="btn btn-inverted" (click)="disabled = !disabled">
+    {{ disabled ? 'Enable' : 'Disable' }}
+  </button>
 
-  <h1>
+  <h2>
     <a id="header-demo" class="anchor" href="#guess-demo" aria-hidden="true"
       ><span class="octicon octicon-link"></span></a
-    >Guess demo
-  </h1>
-  <p>Demo text</p>
+    >Guess demonstration
+  </h2>
+  <p>
+    This demonstration shows the <code>[guess]="true"</code> feature, which
+    allows <code>moment.js</code> to guess the timezone based on the user's
+    browser.
+  </p>
 
   <ngx-timezones #ngxTimezone [guess]="true" [(timezone)]="guessedTimezone">
   </ngx-timezones>
 
-  app.component.ts
+  <code>app.component.ts</code>
   <pre><code>guessedTimezone = {{guessedTimezone ? "'" + guessedTimezone + "'" : 'undefined'}};</code></pre>
-  app.component.html
-  <pre><code> {{code2}}</code></pre>
+  <code>app.component.html</code>
+  <pre><code> {{code1}}</code></pre>
   <button
     class="btn btn-inverted"
     *ngIf="guessedTimezone"
@@ -78,22 +133,15 @@
   >
     Guess timezone
   </button>
-  <button class="btn btn-inverted" (click)="showOffset = !showOffset">
-    {{ showOffset ? 'Hide' : 'Show' }} offset
-  </button>
-  <button
-    class="btn btn-inverted"
-    (click)="tmp = offsetName; offsetName = altName; altName = tmp"
-  >
-    Use {{ altName }}
-  </button>
-
-  <h1>
+  <h2>
     <a id="header-demo" class="anchor" href="#offset-demo" aria-hidden="true"
       ><span class="octicon octicon-link"></span></a
-    >Offset demo
-  </h1>
-  <p>Demo text</p>
+    >Offset demonstration
+  </h2>
+  <p>
+    This demo shows how you can alter the offset settings (show/hide) and
+    (GMT/UTC)
+  </p>
 
   <ngx-timezones
     #ngxTimezone
@@ -104,11 +152,12 @@
   >
   </ngx-timezones>
 
-  app.component.ts
+  <code>app.component.ts</code>
   <pre><code>offsetTimezone = {{offsetTimezone ? "'" + offsetTimezone + "'" : 'undefined'}};
-showOffset = {{showOffset ? 'true' : 'false'}};</code></pre>
-  app.component.html
-  <pre><code> {{code3}}</code></pre>
+showOffset = {{showOffset ? 'true' : 'false'}};
+offsetName = '{{offsetName}}';</code></pre>
+  <code>app.component.html</code>
+  <pre><code> {{code2}}</code></pre>
 
   <button class="btn btn-inverted" (click)="showOffset = !showOffset">
     {{ showOffset ? 'Hide' : 'Show' }} offset
@@ -119,6 +168,17 @@ showOffset = {{showOffset ? 'true' : 'false'}};</code></pre>
   >
     Use {{ altName }}
   </button>
+  <h1>
+    <a
+      id="documentation"
+      class="anchor"
+      href="#documentation"
+      aria-hidden="true"
+      ><span class="octicon octicon-link"></span></a
+    >Documentation
+  </h1>
+  <hr />
+  <p>TODO</p>
   <footer class="site-footer">
     <span class="site-footer-owner"
       ><a href="https://github.com/jasonlong/cayman-theme">Cayman</a> is
